@@ -10,7 +10,7 @@ func WordCount(s string) map[string]int {
  	array_strings:=strings.Fields(s)
  	for _,v:=range array_strings {
  		if _,ok:=m[v]; ok {
-			m[v]+=1
+			m[v]++
  		} else {
  			m[v]=1
  		} 
